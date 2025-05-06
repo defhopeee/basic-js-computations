@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Salary Deduction</title>
+</head>
+<body>
+  <h2>Salary and SHA Deduction</h2>
+  <script>
+    let gross = parseFloat(prompt("Enter your monthly salary:"));
+    let sha = gross * 0.05;
+    let net = gross - sha;
+    let category = "";
+
+    if (gross >= 100000) category = "Rich";
+    else if (gross >= 50000) category = "Middle Class";
+    else category = "Poor";
+
+    alert("Gross Salary: " + gross +
+          "\nSHA Deduction (5%): " + sha +
+          "\nNet Salary: " + net +
+          "\nCategory: " + category);
+  </script>
+</body>
+</html>
